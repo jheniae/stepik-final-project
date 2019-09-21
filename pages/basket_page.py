@@ -8,4 +8,4 @@ class BacketPage(BasePage):
     
     def gues_must_see_text_empty(self):
         text_message = self.browser.find_element(*BaseBasketLocators.BASKET_TEXT_EMPTY).text
-        assert text_messsage == 'Ваша корзина пуста', "Text not found"
+        assert text_message == 'Ваша корзина пуста', "Text not found"
