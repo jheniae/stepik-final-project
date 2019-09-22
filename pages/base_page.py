@@ -5,6 +5,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import math
 from .locators import BasePageLocators, BaseBasketLocators
 from selenium.common.exceptions import NoSuchElementException
+
+
 class BasePage():
     def __init__(self, browser, url, timeout=10):
         self.browser = browser
@@ -27,7 +29,6 @@ class BasePage():
             alert.accept()
         except NoAlertPresentException:
             print("No second alert presented")
-
 
     def is_element_present(self, how, what):
         try:
